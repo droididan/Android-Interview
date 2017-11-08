@@ -59,7 +59,8 @@
 * **What is ADB? **ADB**, **Android Debug Bridge, is a command-line utility included with Google's Android SDK
 
 * **What is ANR? How can the ANR be prevented? **ANR is Application not responding. to avoid getting it avoid performing work on the UI thread and do it on the background, avoid leak memory from views, activities and close Database connections. check for null to get more safety code \(or move to Kotlin that is much more Null safe then Java\) there are some good libraries that can help you find memory leaks like LeakCanary.
-* **What is AndroidManifest.xml?**
+
+* **What is AndroidManifest.xml? **
 * **Describe how broadcasts and intents work to be able to pass messages around your app?**
 * **How do you handle Bitmaps in Android as it takes too much memory?**
 * **What are different ways to store data in your Android app?**
@@ -86,10 +87,9 @@
 * **What can you use for background processing in Android?**
 * **What is ORM? How does it work?**
 * **What is a Loader?**
-* **What is the NDK and why is it useful?**
-* **What is the StrictMode?**
+*  **What is the StrictMode?**
 * **What is Lint? What is it used for?**
-* **What is a SurfaceView?**
+
 * **What is the difference between ListView and RecyclerView?**
 * **What is the ViewHolder pattern? Why should we use it?**
 * **What is a PendingIntent?**

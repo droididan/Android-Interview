@@ -44,6 +44,7 @@
 * What is anonymous classes?
 
 * **What is the difference between using**`==`**and**`.equals`**on a string?** the **==** compares memory address the equals method compares the objects.
+
 * **What is the**`hashCode()`**and**`equals()`**used for?** HashCode returns an Integer to support the benefit of based collection classes such as Hashtable, HashMap, HashSet this method must be overriden in every calss that overrides the equals method. equals compare two objects 
 * **What are these**`final finally`**and**`finalize`? **final** class cannot be inherited, final method cant be overriden and final variable value cannot change. **finally** is used to place important code, its a block of code. **finalize** used to perform clean up processing just before object is garbage collected.
 * **What is memory leak and how does Java handle it?** 
@@ -59,6 +60,7 @@
 * **What does the**`static`**word mean in Java? **static members belong to the class instead of a specific instance. it means only one instance of a static field exists. even if you create a miliion instance members. and static members can access instance members through an object reference.
 
 * **Can a**`static`**method be overridden in Java? **No.
+
 * **What is Polymorphism? What about Inheritance? **Polymorphism is where the method to be invoked is determined at runtime bae on the type of the object. polymorphism is a specific result of inheritance.
 * **What is the difference between an Integer and int? **int is a primitive type
 * **Do objects get passed by reference or value in Java? Elaborate on that. **java pass objects by references but don't pass method by reference. it passes them by value.
@@ -104,6 +106,7 @@
 * **How can two distinct Android apps interact? **You cannot access methods of another Activity in different apps. Broadcast would work but if you want more control consider binding to a remote service in the other app or use Messenger and handler to communicate.
 
 * **What is Fragment? **A Fragment represents a behavoir of user interface in an Activity. you can combine multiple fragment in multiple activities. fragments have their own lifecycle.
+
 * **Explain the lifecycle of a Fragment. **OnAttach -&gt; OnCreate -&gt; OnCreateView -&gt; onStart\(\) -&gt; onResume -&gt; onPause\(\) -&gt; onStop -&gt; onDestroyView -&gt; onDetach\(\) -&gt;
 * **What is Dialog in Android? **There are ProgressDialogs, DialogFragments
 * **What is View in Android? **View Objects are the basic building blocks of User Interface \(UI\) elements in Android. EditTextView, Button, CheckBox are childs of view.
@@ -123,6 +126,7 @@
 * **What are Intents? **an "intention" to perform an action, basically a message to say you did or want something to happen. must of the time it used to navigate between activities. the user can "payload" to it called Bundle.
 
 * **What is an Implicit Intent?**
+
 * **What is an Explicit Intent?**
 * **What is an AsyncTask?**
 * **What is a BroadcastReceiver?**

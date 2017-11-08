@@ -8,99 +8,65 @@
 * **Stack **The Stack calss reperesent a last-in-first-out \(LIFO\) stack of objects. It extends the class Vector with five operation that allow vector to be treated as a stack.Modifier and Type
   |  | Method and Description |
   | :--- | :--- |
-  | `boolean` | [**`empty`**](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#empty%28%29)`()`Tests if this stack is empty. |
-  | [`E`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html) | [**`peek`**](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#peek%28%29)`()`Looks at the object at the top of this stack without removing it from the stack. |
-  | [`E`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html) | [**`pop`**](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#pop%28%29)`()`Removes the object at the top of this stack and returns that object as the value of this function. |
-  | [`E`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html) | [**`push`**](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#push%28E%29)`(`[`E`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html)` item)`Pushes an item onto the top of this stack. |
-  | `int` | [**`search`**](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#search%28java.lang.Object%29)`(`[`Object`](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html)` o)`Returns the 1-based position where an object is on this stack. |
-* **Queue FIFO - **peek\(\) will retrieve the object but will not remove it, add\(\) will insert, poll\(\)
-* **PriorityQueue**
-* **Dynamic** **Programming**
-* **String Manipulation**
-* **Binary Tree**
-* **Binary Search Tree**
-* **Sorting Algorithms**
-* **Hash Table or Hash Map**
+  | `boolean` | [`empty`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#empty%28%29)`()`Tests if this stack is empty. |
+  | [`E`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html) | [`peek`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#peek%28%29)`()`Looks at the object at the top of this stack without removing it from the stack. |
+  | [`E`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html) | [`pop`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#pop%28%29)`()`Removes the object at the top of this stack and returns that object as the value of this function. |
+  | [`E`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html) | [`push`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#push%28E%29)`(`[`E`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html)`item)`Pushes an item onto the top of this stack. |
+  | `int` | [`search`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#search%28java.lang.Object%29)`(`[`Object`](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html)`o)`Returns the 1-based position where an object is on this stack. |
+* **Queue FIFO - **peek\(\) will retrieve the object but will not remove it, add\(\) will insert, poll\(\) will retrieve and remove the elemnt
+* **PriorityQueue - **he elements of the priority queue are ordered according to their natural ordering
+* **Dynamic** **Programming **must of the time used for optimization. a dynamic programming algo will will examine the previously solved problam and will combine their solutions to give the best solution for the given problem
+* **String Manipulation **
+* **Binary Tree **its a tree which each node has at most two children, which are referred to as the _left_ _child _ and the _right child. _
+* **Binary Search Tree **it's like a binary tree but they allow fast lookup. Binary search trees keep their keys in sorted order, support three main operations: insertion of element, deletion of elements, lookup.
+* **Sorting Algorithms **Quick Sort - 
+* **Hash Table or Hash Map **[`Hashtable`](http://java.sun.com/javase/7/docs/api/java/util/Hashtable.html)is [synchronized](https://stackoverflow.com/questions/1085709/what-does-synchronized-mean), whereas[`HashMap`](http://java.sun.com/javase/7/docs/api/java/util/HashMap.html)is not. This makes[`HashMap`](http://java.sun.com/javase/7/docs/api/java/util/HashMap.html)better for non-threaded applications, as unsynchronized Objects typically perform better than synchronized ones.
+  1. [`Hashtable`](http://java.sun.com/javase/7/docs/api/java/util/Hashtable.html)does not allow`null`keys or values.[`HashMap`](http://java.sun.com/javase/7/docs/api/java/util/HashMap.html)allows one`null`key and any number of`null`values.
+
+  2. One of HashMap's subclasses is[`LinkedHashMap`](http://java.sun.com/javase/7/docs/api/java/util/LinkedHashMap.html), so in the event that you'd want predictable iteration order \(which is insertion order by default\), you could easily swap out the[`HashMap`](http://java.sun.com/javase/7/docs/api/java/util/HashMap.html)for a[`LinkedHashMap`](http://java.sun.com/javase/7/docs/api/java/util/LinkedHashMap.html). This wouldn't be as easy if you were using[`Hashtable`](http://java.sun.com/javase/7/docs/api/java/util/Hashtable.html).
 * **Breadth First Search**
 * **Depth First Search**
 * **Greedy Algorithm**
 
 ### Core Java
 
-* Explain OOP Concept.
-* Differences between abstract classes and interfaces?
-* What is serialization? How do you implement it?
-* What is Singleton class?
-* What is anonymous classes?
-* What is the difference between using
-  `==`
-  and
-  `.equals`
-  on a string?
-* What is the
-  `hashCode()`
-  and
-  `equals()`
-  used for?
-* What are these
-  `final`
-  ,
-  `finally`
-  and
-  `finalize`
-  ?
-* What is memory leak and how does Java handle it?
+* **Explain OOP Concept**. _Abstraction_ means using simple things to reperesnt complexity. _Encapsulation _this is the practice to keep the fields in class private then accessing them from a public function  _Inheritance _feature of OOP lets you share some of the attributes of exisiting classes. _polymorphism. _**DRY \(Don’t Repeat Yourself\) / Single Responsibility / Open Closed Design. **
+
+* **Differences between abstract classes and interfaces**? abstract class, unlike interfaces are classes. They are more expensive to use, becuase there is a look-up do when you inherit from them. an **interface **is a contract that have only the signature of the methods do not have body.
+* **What is serialization?** How do you implement it? brake a class into byte code, used to pass objects between activities. better practice is to use Parcallable. 
+* **What is Singleton class**? a class that have only one instance.
+* What is anonymous classes? 
+* **What is the difference between using`==`and`.equals`on a string?** the **==** compares memory address the equals method compares the objects.
+* **What is the`hashCode()`and`equals()`used for?** HashCode returns an Integer to support the benefit of based collection classes such as Hashtable, HashMap, HashSet this method must be overriden in every calss that overrides the equals method. equals compare two objects 
+* **What are these`final finally`and`finalize`**? **final** class cannot be inherited, final method cant be overriden and final variable value cannot change. **finally** is used to place important code, its a block of code. **finalize** used to perform clean up processing just before object is garbage collected.
+* **What is memory leak and how does Java handle it?** 
 * What is garbage collector? How it works?
-* Arrays vs ArrayLists.
-* HashSet vs TreeSet.
-* Typecast in Java.
+* **Arrays vs ArrayLists **arrays are fixes in size ArrayList cannot create primitive data types.
+* **HashSet vs TreeSet**  both do not hold duplicate items, **HashSet **performance \(faster\) than TreeSet for the operations like add, remove contains, size etc. **HashSet** offers constant time cost while TreeSet offers log\(n\) time cost for such operations.
+* Typecast in Java. with the TreeSet the elements will be sorted.
 * Difference between method overloading and overriding.
 * What are the access modifiers you know? What does each one do?
 * Can an Interface extend another Interface?
-* What does the
-  `static`
-  word mean in Java?
-* Can a
-  `static`
-  method be overridden in Java?
+* What does the`static`word mean in Java?
+* Can a`static`method be overridden in Java?
 * What is Polymorphism? What about Inheritance?
 * What is the difference between an Integer and int?
 * Do objects get passed by reference or value in Java? Elaborate on that.
 * What is a ThreadPoolExecutor?
-  [Link](https://blog.mindorks.com/threadpoolexecutor-in-android-8e9d22330ee3)
 * What the difference between local, instance and class variables?
 * What is reflection?
 * What are strong, soft and weak references in Java?
 * What is dependency injection? Can you name few libraries? Have you used any?
-* What does the keyword
-  `synchronized`
-  mean?
-* What does it means to say that a
-  `String`
-  is immutable?
-* What are
-  `transient`
-  and
-  `volatile`
-  modifiers?
-* What is the
-  `finalize()`
-  method?
-* How does the
-  `try{}finally{}`
-  works?
+* What does the keyword`synchronized`mean?
+* What does it means to say that a`String`is immutable?
+* What are`transient`and`volatile`modifiers
+* What is the`finalize()`method?
+* **How does the`try{}finally{}`works? **finally will get called any way
 * What is the difference between instantiation and initialization of an object?
-* When is a
-  `static`
-  block run?
+* When is a`static`block run?
 * Explain Generics in Java?
-* Difference between
-  `StringBuffer`
-  and
-  `StringBuilder`
-  ?
-* How is a
-  `StringBuilder`
+* Difference between`StringBuffer`and`StringBuilder`?
+* How is a`StringBuilder`
   implemented to avoid the immutable string allocation problem?
 * What is Autoboxing and Unboxing?
 * What’s the difference between an Enumeration and an Iterator?
@@ -129,7 +95,6 @@
 * What is the difference between a fragment and an activity? Explain the relationship between the two.
 * What is the difference between Serializable and Parcelable? Which is the best approach in Android?
 * What are "launch modes"?
-  [Link](https://blog.mindorks.com/android-activity-launchmode-explained-cbc6cf996802)
 * What are Intents?
 * What is an Implicit Intent?
 * What is an Explicit Intent?
@@ -156,7 +121,6 @@
 * Difference between View.GONE and View.INVISIBLE?
 * What is the difference between a regular bitmap and a nine-patch image?
 * Tell about the bitmap pool.
-  [Link](https://blog.mindorks.com/how-to-use-bitmap-pool-in-android-56c71a55533c)
 * How to avoid memory leaks in Android?
 * What are widgets on Home-Screen in Android?
 * What is AAPT?
@@ -170,7 +134,6 @@
 * What is a Loader?
 * What is the NDK and why is it useful?
 * What is the StrictMode?
-  [Link](https://blog.mindorks.com/use-strictmode-to-find-things-you-did-by-accident-in-android-development-4cf0e7c8d997)
 * What is Lint? What is it used for?
 * What is a SurfaceView?
 * What is the difference between ListView and RecyclerView?
@@ -180,53 +143,33 @@
 * What is the best way to update the screen periodically?
 * What are the different types of Broadcasts?
 * Have you developed widgets? Describe.
-  [Link](https://blog.mindorks.com/android-widgets-ad3d166458d3)
 * What is Context? How is it used?
-  [Link](https://medium.com/p/understanding-context-in-android-application-330913e32514)
 * Do you know what is the view tree? How can you optimize its depth?
-* What is the
-  `onTrimMemory`
+* What is the`onTrimMemory`
   method?
 * Is it possible to run an Android app in multiple processes? How?
 * How does the OutOfMemory happens?
-* What is a
-  `spannable`
-  ?
+* What is a`spannable`?
 * What is renderscript?
-  [Link](https://blog.mindorks.com/comparing-android-ndk-and-renderscript-1a718c01f6fe)
 * What are the differences between Dalvik and ART?
 * FlatBuffers vs JSON.
-  [Link](https://blog.mindorks.com/why-consider-flatbuffer-over-json-2e4aa8d4ed07)
-* What are Annotations?
-  [Link](https://blog.mindorks.com/creating-custom-annotations-in-android-a855c5b43ed9)
-  ,
-  [Link](https://blog.mindorks.com/improve-your-android-coding-through-annotations-26b3273c137a)
+* What are Annotations
 * Tell about Constraint Layout
-  [Link](https://blog.mindorks.com/using-constraint-layout-in-android-531e68019cd)
 * HashMap, ArrayMap and SparseArray
-  [Link](https://blog.mindorks.com/android-app-optimization-using-arraymap-and-sparsearray-f2b4e2e3dc47)
 * Explain Looper, Handler and HandlerThread.
-  [Link](https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a)
 * How to reduce battery usage in an android application?
-  [Link](https://blog.mindorks.com/battery-optimization-for-android-apps-f4ef6170ff70)
-* What is
-  `SnapHelper`
-  ?
-  [Link](https://blog.mindorks.com/using-snaphelper-in-recyclerview-fc616b6833e8)
+* What is`SnapHelper`?
 
 ### Architecture
 
 * Describe the architecture of your last app.
 * Describe MVP.
-  [Link](https://blog.mindorks.com/essential-guide-for-designing-your-android-app-architecture-mvp-part-1-74efaf1cda40)
 * What is presenter?
 * What is model?
 * Describe MVC.
 * What is controller?
 * Describe MVVM.
-  [Link](https://github.com/MindorksOpenSource/android-mvvm-architecture)
 * Tell something about clean code
-  [Link](https://blog.mindorks.com/every-programmer-should-read-this-book-6755dedec78d)
 
 ### Design Problem
 
@@ -240,28 +183,19 @@
 ### Tools And Technologies
 
 * Git.
-  [Link](https://github.com/git-tips/tips)
 * RxJava.
-  [Link](https://blog.mindorks.com/a-complete-guide-to-learn-rxjava-b55c0cea3631)
-* Dagger 2.
-  [Link](https://medium.com/p/a-complete-guide-to-learn-dagger-2-b4c7a570d99c)
+* Dagger 2 
 * Android Development Useful Tools.
-  [Link](https://blog.mindorks.com/android-development-useful-tools-fd73283e82e3)
 
 ### Android Test Driven Development
 
 * What is Espresso?
-  [Link](https://developer.android.com/training/testing/ui-testing/espresso-testing.html)
 * What is Robolectric?
-  [Link](http://robolectric.org/)
 * What is UI-Automator?
-  [Link](https://developer.android.com/training/testing/ui-testing/uiautomator-testing.html)
 * Explain unit test.
 * Explain instrumented test.
 * Have you done unit testing or automatic testing?
-* Why Mockito is used? \[Link\] \(
-  [http://site.mockito.org/](http://site.mockito.org/)
-  \)
+* Why Mockito is used? \[Link\]
 * Describe JUnit test.
 
 ### Others
@@ -276,15 +210,12 @@
 * What is obfuscation? What is it used for? What about minification?
 * How do you build your apps for release?
 * APK Size Reduction.
-  [Link](https://blog.mindorks.com/how-i-decreased-my-app-size-to-70-using-apk-analyser-4a6f79512072)
 * Android Development Best Practices.
-  [Link](https://blog.mindorks.com/android-development-best-practices-83c94b027fd3)
 * Android Code Style And Guidelines.
-  [Link](https://blog.mindorks.com/android-code-style-and-guidelines-d5f80453d5c7)
+
 * Have you tried Kotlin?
-  [Link](https://medium.com/p/why-you-must-try-kotlin-for-android-development-e14d00c8084b)
+
 * What are the metrics that you should measure continuously while android application development?
-  [Link](https://blog.mindorks.com/android-app-performance-metrics-a1176334186e)
 
 
 

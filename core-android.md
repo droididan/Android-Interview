@@ -32,6 +32,7 @@
 * **What is the difference between a fragment and an activity? Explain the relationship between the two. **Activity is Android component that provides a screen, with which users can interact in. Whereas a Fragment reperesnt a behavior or portion of use interface in an Activity.
 
 * **What is the difference between Serializable and Parcelable? Which is the best approach in Android? **In Android we know that we cannot pass objects in activities. The objects must be either implements serializable or Parcelable interface to do this. Serializable is a standard Java interface. You can just implement Serializable interface and add override methods.The problem with this approach is that reflection is used and it is a slow process. This method create a lot of temporary objects and cause quite a bit of garbage collection. Serializable interface is easier to implement.  Parcelable process is much faster than serializable. One of the reasons for this is that we are being explicit about the serialization process instead of using reflection to infer it. It also stands to reason that the code has been heavily optimized for this purpose.
+
 * **What are "launch modes"? **Activities live in a stack that contains a collection of activity instances. Launch mode allows you to define how a new instance or the exiting instance of an activity is associated with the current task. the activity launch mode has four valid values that you can control in the Manifest file. _**Standard** - \_This is the common mode for most of the activities. Multiple instances of the activity calss can be instantiated and multiple instances can be added to the same task or different tasks. _**singleTop** -_ if an instance of activity already exists at the top of the current task and system routes intent to this activity, no new instance will be created becuse it will fire off an onNewIntent. _**SingleTask - **_A new task will always be created and a new instance will be pushed to the task as the root one. However, if any activity instance exists in any tasks, the system routes the intent to that activity instance through onNewIntent\(\). _**SingleInstance **\_Same as SingleTask, except that the no activities instance can be pushed into the same task of the singleInstance's. That means, the activity with launch mode is always in a single activity instance task. this is a very specialized mode and should only be used in the applications taht are implemented entirely as one activity
 
 ```
@@ -53,10 +54,11 @@
 
 * **What is the support library? Why was it introduced? **The [Support Library](http://developer.android.com/tools/support-library/index.html) is generally used when you want to easily support a wider range of OS versions with less version specific source - with it you can use features introduced in higher version of the OS on older platforms without having to worry and check whether this platform has that feature and do something in case it doesn't.
 
-* **What is a ContentProvider and what is it typically used for?**
+* **What is a ContentProvider and what is it typically used for? **A ContentProvider manages access to a structured set of data. It encapsulates the data and provide mechanisms for defining data security. ContentProvider is the standard interface that connects data in one process with code running in another process.
 
-* **What is ADB?**
-* **What is ANR? How can the ANR be prevented?**
+* **What is ADB? **ADB**, **Android Debug Bridge, is a command-line utility included with Google's Android SDK
+
+* **What is ANR? How can the ANR be prevented? **ANR is Application not responding. to avoid getting it avoid performing work on the UI thread and do it on the background, avoid leak memory from views, activities and close Database connections. check for null to get more safety code \(or move to Kotlin that is much more Null safe then Java\) there are some good libraries that can help you find memory leaks like LeakCanary.
 * **What is AndroidManifest.xml?**
 * **Describe how broadcasts and intents work to be able to pass messages around your app?**
 * **How do you handle Bitmaps in Android as it takes too much memory?**

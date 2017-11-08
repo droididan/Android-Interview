@@ -25,7 +25,8 @@
 
 * **What is View in Android? **View Objects are the basic building blocks of User Interface \(UI\) elements in Android. EditTextView, Button, CheckBox are childs of view.
 
-* **Can you create custom views? How? **Yes, you can extend from LinearLayout, ReleativeLayout, FrameLayout etc to get their behavior and extend their functionality. 
+* **Can you create custom views? How? **Yes, you can extend from LinearLayout, ReleativeLayout, FrameLayout etc to get their behavior and extend their functionality.
+
 * **What are ViewGroups and how they are different from the views? **A ViewGroup is a special view that can contain other views \(called children\).
 * **What is the difference between a fragment and an activity? Explain the relationship between the two. **Activity is Android component that provides a screen, with which users can interact in. Whereas a Fragment reperesnt a behavior or portion of use interface in an Activity.
 * **What is the difference between Serializable and Parcelable? Which is the best approach in Android? **In Android we know that we cannot pass objects in activities. The objects must be either implements serializable or Parcelable interface to do this. Serializable is a standard Java interface. You can just implement Serializable interface and add override methods.The problem with this approach is that reflection is used and it is a slow process. This method create a lot of temporary objects and cause quite a bit of garbage collection. Serializable interface is easier to implement.  Parcelable process is much faster than serializable. One of the reasons for this is that we are being explicit about the serialization process instead of using reflection to infer it. It also stands to reason that the code has been heavily optimized for this purpose.
@@ -40,15 +41,14 @@
 
 * **What are Intents? **an "intention" to perform an action, basically a message to say you did or want something to happen. must of the time it used to navigate between activities. the user can "payload" to it called Bundle.
 
-* **What is an Implicit Intent?**
+* **What is an Implicit Intent? **Implicit Intents do not directly specify the Android components which should be called , it only specifies action to be performed. for example open Google Map or sending an email.
 
-* **What is an Explicit Intent?**
+* **What is an Explicit Intent? **An explicit intent is most commonly used when launching an activity \(from another one\) within the same application. With them the component name is generally specified to which the intent has to be delivered
 
-* **What is an AsyncTask?**
-
-* **What is a BroadcastReceiver?**
+* **What is a BroadcastReceiver? **
 
 * **What is DDMS and what can you do with it?**
+
 * **What is the support library? Why was it introduced?**
 * **What is a ContentProvider and what is it typically used for?**
 * **What is ADB?**
@@ -103,9 +103,9 @@
 * **What are Annotations**
 * **Tell about Constraint Layout**
 * **HashMap, ArrayMap and SparseArray**
-* **Explain Looper, Handler and HandlerThread.**
-* **How to reduce battery usage in an android application?**
-* **What is**`SnapHelper`**?**
+* **Explain Looper, Handler and HandlerThread. **
+* **How to reduce battery usage in an android application? **There are many ways to achieve that, one of them is reduce the REST calls and use local Database to load you data, using the new [Doze](https://developer.android.com/training/monitoring-device-state/doze-standby.html) and removing the amount of SDK's that send information, for example see if you can reduce the amount of Analytics SDK's in your app.
+* **What is**`SnapHelper`**? **SnapHelper is a helper class that helps in snapping any child view of the RecyclerView
 
 ### 
 

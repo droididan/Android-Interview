@@ -2,10 +2,10 @@
 
 > The level of questions asked on Data Structures And Algorithms totally depends on the company for which you are applying.
 
-* **ArrayList** -  Resizable-array implementation of List interface. 
-* **LinkedList** can contain duplicate elements, maintains insertion order,
-* **DoublyLinkedList** - each node contains tow fields called _links, \_that are references to the previous_ and to the \_next node, when deleting a node the previous one getting deleted
-* **Stack **The Stack calss reperesent a last-in-first-out \(LIFO\) stack of objects. It extends the class Vector with five operation that allow vector to be treated as a stack.Modifier and Type
+*  **ArrayList** -  Resizable-array implementation of List interface. 
+*  **LinkedList** can contain duplicate elements, maintains insertion order,
+*  **DoublyLinkedList** - each node contains tow fields called _links, \_that are references to the previous_ and to the \_next node, when deleting a node the previous one getting deleted
+*  **Stack **The Stack calss reperesent a last-in-first-out \(LIFO\) stack of objects. It extends the class Vector with five operation that allow vector to be treated as a stack.Modifier and Type
   |  | Method and Description |
   | :--- | :--- |
   | `boolean` | [`empty`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#empty%28%29)`()`Tests if this stack is empty. |

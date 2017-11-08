@@ -61,6 +61,7 @@
 * **What is ANR? How can the ANR be prevented? **ANR is Application not responding. to avoid getting it avoid performing work on the UI thread and do it on the background, avoid leak memory from views, activities and close Database connections. check for null to get more safety code \(or move to Kotlin that is much more Null safe then Java\) there are some good libraries that can help you find memory leaks like LeakCanary.
 
 * **What is AndroidManifest.xml? **
+
 * **Describe how broadcasts and intents work to be able to pass messages around your app?**
 * **How do you handle Bitmaps in Android as it takes too much memory?**
 * **What are different ways to store data in your Android app?**
@@ -87,10 +88,11 @@
 * **What can you use for background processing in Android?**
 * **What is ORM? How does it work?**
 * **What is a Loader?**
-*  **What is the StrictMode?**
+* **What is the StrictMode?**
 * **What is Lint? What is it used for?**
 
 * **What is the difference between ListView and RecyclerView?**
+
 * **What is the ViewHolder pattern? Why should we use it?**
 * **What is a PendingIntent?**
 * **Can you manually call the Garbage collector?**
@@ -101,12 +103,11 @@
 * **Do you know what is the view tree? How can you optimize its depth?**
 * **What is the**`onTrimM`**method?**
 * **Is it possible to run an Android app in multiple processes? How?**
-* **How does the OutOfMemory happens?**
-* **What is a**`spannable`**?**
-* **What is renderscript?**
+* **How does the OutOfMemory happens? **There most common reason for the _java.lang.OutOfMemoryError: Java heap space _error is simple
+* **What is a**`spannable`**? **This is the interface for text to which markup objects can be attached and detached. Not all Spannable classes have mutable text see[`Editable`](https://developer.android.com/reference/android/text/Editable.html)for that.
+* **What is renderscript? **RenderScript is a component of the Android operating system for mobile devices that offers an API for acceleration, it can be used for example to create Blur effect.
 * **What are the differences between Dalvik and ART?**
-* **FlatBuffers vs JSON.**
-* **What are Annotations**
+*  **What are Annotations**
 * **Tell about Constraint Layout**
 * **HashMap, ArrayMap and SparseArray**
 * **Explain Looper, Handler and HandlerThread. **

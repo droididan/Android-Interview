@@ -26,6 +26,7 @@
   1. One of HashMap's subclasses is[`LinkedHashMap`](http://java.sun.com/javase/7/docs/api/java/util/LinkedHashMap.html), so in the event that you'd want predictable iteration order \(which is insertion order by default\), you could easily swap out the[`HashMap`](http://java.sun.com/javase/7/docs/api/java/util/HashMap.html)for a[`LinkedHashMap`](http://java.sun.com/javase/7/docs/api/java/util/LinkedHashMap.html). This wouldn't be as easy if you were using[`Hashtable`](http://java.sun.com/javase/7/docs/api/java/util/Hashtable.html).
 
 * **Breadth First Search**
+
 * **Depth First Search**
 * **Greedy Algorithm**
 
@@ -35,7 +36,8 @@
 
 * **Differences between abstract classes and interfaces**? abstract class, unlike interfaces are classes. They are more expensive to use, becuase there is a look-up do when you inherit from them. an **interface **is a contract that have only the signature of the methods do not have body.
 
-* **What is serialization?** **How do you implement it?** brake a class into byte code, used to pass objects between activities. better practice is to use Parcallable. 
+* **What is serialization?** **How do you implement it?** brake a class into byte code, used to pass objects between activities. better practice is to use Parcallable.
+
 * **What is Singleton class**? a class that have only one instance.
 * What is anonymous classes? 
 * **What is the difference between using**`==`**and**`.equals`**on a string?** the **==** compares memory address the equals method compares the objects.
@@ -47,10 +49,11 @@
 * **HashSet vs TreeSet**  both do not hold duplicate items, **HashSet **performance \(faster\) than TreeSet for the operations like add, remove contains, size etc. **HashSet** offers constant time cost while TreeSet offers log\(n\) time cost for such operations.
 * **Difference between method overloading and overriding. Ovlerloading** accurs when two or more methods in the class have the same method name but different params. **Overriding** means having two different methods with the same params but on a other child class.
 
-* **What are the access modifiers you know? What does each one do? **private - helps encapsulate methods and vars. public - lets you access vars and classes 
+* **What are the access modifiers you know? What does each one do? **private - helps encapsulate methods and vars. public - lets you access vars and classes
+
 * **Can an Interface extend another Interface?** Yes.
-* **What does the`static`word mean in Java? **static members belong to the class instead of a specific instance. it means only one instance of a static field exists. even if you create a miliion instance members. and static members can access instance members through an object reference.
-* **Can a`static`method be overridden in Java? **No.
+* **What does the**`static`**word mean in Java? **static members belong to the class instead of a specific instance. it means only one instance of a static field exists. even if you create a miliion instance members. and static members can access instance members through an object reference.
+* **Can a**`static`**method be overridden in Java? **No.
 * **What is Polymorphism? What about Inheritance? **Polymorphism is where the method to be invoked is determined at runtime bae on the type of the object. polymorphism is a specific result of inheritance.
 * **What is the difference between an Integer and int? **int is a primitive type
 * **Do objects get passed by reference or value in Java? Elaborate on that. **java pass objects by references but don't pass method by reference. it passes them by value.
@@ -59,16 +62,16 @@
 * **What is reflection?**
 * **What are strong, soft and weak references in Java?**
 * **What is dependency injection? Can you name few libraries? Have you used any?**
-* **What does the keyword`synchronized`mean?**
-* **What does it means to say that a`String`is immutable?**
-* **What are`transient`and`volatile`modifiers**
-* **What is the`finalize()`method?**
-* **How does the`try{}finally{}`works? finally will get called any way**
+* **What does the keyword**`synchronized`**mean?**
+* **What does it means to say that a**`String`**is immutable?**
+* **What are**`transient`**and**`volatile`**modifiers**
+* **What is the**`finalize()`**method?**
+* **How does the**`try{}finally{}`**works? finally will get called any way**
 * **What is the difference between instantiation and initialization of an object?**
-* **When is a`static`block run?**
+* **When is a**`static`**block run?**
 * **Explain Generics in Java?**
-* **Difference between`StringBuffer`and`StringBuilder`?**
-* **How is a`StringBuilder`**
+* **Difference between**`StringBuffer`**and**`StringBuilder`**?**
+* **How is a**`StringBuilder`
   **implemented to avoid the immutable string allocation problem?**
 * **What is Autoboxing and Unboxing?**
 * **What’s the difference between an Enumeration and an Iterator?**
@@ -80,23 +83,25 @@
 
 * **Explain activity lifecycle.** OnCreate -&gt; OnStart -&gt; OnResume -&gt; onPause -&gt; OnStop -&gt; OnDestroy
 * **Tell all the Android appplication components. **Activities - dictate the UI, Services - Handle long running operations on the background , BroadCast Receivers - They handle communication between Android OS and applications, Content Providers -&gt; They handle data and database management issues.
-* **Service vs IntentService. **The _Service _can be used in tasks with no UI, but shouldn't be too long. If you need to perform long tasks, you must use threads within Service. The _IntentService_
+* **Service vs IntentService. **The _Service \_can be used in tasks with no UI, but shouldn't be too long. If you need to perform long tasks, you must use threads within Service. The \_IntentService_  
   can be used in long tasks usually with no communication to Main Thread. If communication is required, can use Main Thread handler or broadcast intents. Another case of use is when callbacks are needed \(Intent triggered tasks\).
 
 * **What is the structure of an Android Application? **Manifest, assets, resources, java classs
+
 * **How to persist data in an Android app? **Shared Preferences, internal database like Realm, Room, SQLite, AndroidORM etc...
 * **How would you perform a long-running operation in an application? **With a background Service.
 
 * **How would you communicate between two Fragments? **Via interfaces throw the Activity that holds these Fragments
+
 * **Explain Android notification system? ** A Notification is a message you display to the user outside of the app. to start getting notification you need to register the FCM service and listen to incoming messages. you show these notification with the NotificationManager.
 * **How can two distinct Android apps interact? **You cannot access methods of another Activity in different apps. Broadcast would work but if you want more control consider binding to a remote service in the other app or use Messenger and handler to communicate.
 * **What is Fragment? **A Fragment represents a behavoir of user interface in an Activity. you can combine multiple fragment in multiple activities. fragments have their own lifecycle.
 * **Explain the lifecycle of a Fragment. **OnAttach -&gt; OnCreate -&gt; OnCreateView -&gt; onStart\(\) -&gt; onResume -&gt; onPause\(\) -&gt; onStop -&gt; onDestroyView -&gt; onDetach\(\) -&gt;
-* **What is Dialog in Android? **
-* **What is View in Android?**
-* **Can you create custom views? How?**
-* **What are ViewGroups and how they are different from the views?**
-* **What is the difference between a fragment and an activity? Explain the relationship between the two.**
+* **What is Dialog in Android? **There are ProgressDialogs, DialogFragments
+* **What is View in Android? **View Objects are the basic building blocks of User Interface \(UI\) elements in Android. EditTextView, Button, CheckBox are childs of view.
+* **Can you create custom views? How? **Yes, you can extend from LinearLayout, ReleativeLayout, FrameLayout etc to get their behavior and extend their functionality. 
+* **What are ViewGroups and how they are different from the views? **A ViewGroup is a special view that can contain other views \(called children\).
+* **What is the difference between a fragment and an activity? Explain the relationship between the two. **Activity is Android component that provides a screen, with which users can interact in. Whereas a Fragment reperesnt a behavior or portion of use interface in an Activity.
 * **What is the difference between Serializable and Parcelable? Which is the best approach in Android?**
 * **What are "launch modes"?**
 * **What are Intents?**
@@ -149,11 +154,11 @@
 * **Have you developed widgets? Describe.**
 * **What is Context? How is it used?**
 * **Do you know what is the view tree? How can you optimize its depth?**
-* **What is the`onTrimMemory`**
+* **What is the**`onTrimMemory`
   **method?**
 * **Is it possible to run an Android app in multiple processes? How?**
 * **How does the OutOfMemory happens?**
-* **What is a`spannable`?**
+* **What is a**`spannable`**?**
 * **What is renderscript?**
 * **What are the differences between Dalvik and ART?**
 * **FlatBuffers vs JSON.**
@@ -162,7 +167,7 @@
 * **HashMap, ArrayMap and SparseArray**
 * **Explain Looper, Handler and HandlerThread.**
 * **How to reduce battery usage in an android application?**
-* **What is`SnapHelper`?**
+* **What is**`SnapHelper`**?**
 
 ### Architecture
 
@@ -202,7 +207,7 @@
 * **Why Mockito is used? \[Link\]**
 * **Describe JUnit test.**
 
-### Advanced 
+### Advanced
 
 * **Describe how REST APIs work.**
 * **Describe SQLite.**

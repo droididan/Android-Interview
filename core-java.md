@@ -16,7 +16,8 @@
 
 * **What are these**`final finally`**and**`finalize`? **final** class cannot be inherited, final method cant be overriden and final variable value cannot change. **finally** is used to place important code, its a block of code. **finalize** used to perform clean up processing just before object is garbage collected.
 
-* **What is memory leak and how does Java handle it?** 
+* **What is memory leak and how does Java handle it?**
+
 * **What is garbage collector? How it works?**
 * **Arrays vs ArrayLists **arrays are fixes in size ArrayList cannot create primitive data types.
 * **HashSet vs TreeSet**  both do not hold duplicate items, **HashSet **performance \(faster\) than TreeSet for the operations like add, remove contains, size etc. **HashSet** offers constant time cost while TreeSet offers log\(n\) time cost for such operations.
@@ -35,6 +36,7 @@
 * **What is the difference between an Integer and int? **int is a primitive type
 
 * **Do objects get passed by reference or value in Java? Elaborate on that. **java pass objects by references but don't pass method by reference. it passes them by value.
+
 * **What is a ThreadPoolExecutor? **contains varying amount of threads, it's implemenation of the ExecutorService.
 * **What the difference between local, instance and class variables? **
 * **What is reflection?**
@@ -55,7 +57,7 @@
 * **What’s the difference between an Enumeration and an Iterator?**
 * **What is the difference between fail-fast and fail safe in Java?**
 * **What is Java priority queue?**
-* **What are the design patterns?**
+* **What are the design patterns? **Design patterns are reusable solution to a commonly problem within a given context in software design. OOP design patterns typically show relationship and interaction between classes and objects.design patterns are grouped into these categories: creational patterns, structural patterns and behavioral patterns. The more known patterns are: _**Builder**_ \(Seperate the construction of a complex object from its representation\), _**Singleton**_ - Ensure a a class has only one instance and provide a global point of access to it. _**Factory method**_** **- Factory Method lets a a class defer instantiation to subclasses._** Decorator**_ - Attach additional responsibillities to an object dynamically keeping the same interface.  mainly to extend functionality. and there are many more. I wrote an example [project](/add) in Kotlin that shows many patterns.
 
 
 

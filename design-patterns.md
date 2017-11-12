@@ -14,11 +14,5 @@ Design Patterns are  these patterns are categorized into 3 main groups:
 
 ### Observer Pattern
 
-The observer pattern is used to allow an object to publish changes to its state. Other objects subscribe to be immediately notified of any changes. RxJava/Android is doing a great job by using the observer patterns to observe object or views. \(check this acrticle for more information\)
-
-
-
-
-
-
+The observer pattern is used to allow an object to publish changes to its state. Other objects subscribe to be immediately notified of any changes. RxJava/Android is doing a great job by using the observer patterns to observe object or views. \(check this [acrticle](https://github.com/idanbar134/into_the_rx) for more information\)
 

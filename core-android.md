@@ -1,8 +1,8 @@
 ### Core Android
 
 * **Explain activity lifecycle.** OnCreate -&gt; OnStart -&gt; OnResume -&gt; onPause -&gt; OnStop -&gt; OnDestroy
-* **Tell all the Android appplication components. **`Activities` - dictate the UI,` Services` - Handle long running operations on the background , `BroadCast Receivers` - They handle communication between Android OS and applications, `Content Providers` They handle data and database management issues.
-* **Service vs IntentService. **`The`_`Service`  can be used in tasks with no UI, but shouldn't be too long. If you need to perform long tasks, you must use threads within Service. The `IntentService`_  
+* **Tell all the Android appplication components. **`Activities` - dictate the UI,`Services` - Handle long running operations on the background , `BroadCast Receivers` - They handle communication between Android OS and applications, `Content Providers` They handle data and database management issues.
+* **Service vs IntentService. **`TheService`_  can be used in tasks with no UI, but shouldn't be too long. If you need to perform long tasks, you must use threads within Service. The _`IntentService`  
   can be used in long tasks usually with no communication to Main Thread. If communication is required, can use Main Thread handler or broadcast intents. Another case of use is when callbacks are needed \(Intent triggered tasks\).
 
 * **What is the structure of an Android Application? **Manifest, assets, resources, java classs
@@ -67,6 +67,7 @@
 * **How do you handle Bitmaps in Android as it takes too much memory?**
 
 * **What are different ways to store data in your Android app?**
+
 * **What is the Dalvik Virtual Machine?**
 * **What is the relationship between the life cycle of an AsyncTask and an Activity? What problems can this result in? How can these problems be avoided?**
 * **What is the function of an intent filter?**
@@ -76,7 +77,7 @@
 * **How would you preserve Activity state during a screen rotation?**
 * **Relative Layout vs Linear Layout.**
 * **How to implement XML namespaces?**
-* **Difference between View.GONE and View.INVISIBLE?**
+* **Difference between View.GONE and View.INVISIBLE? **`Invisible` will make the view only transparent without effecting other view behavior. 
 * **What is the difference between a regular bitmap and a nine-patch image?**
 * **Tell about the bitmap pool.**
 * **How to avoid memory leaks in Android?**
@@ -100,6 +101,7 @@
 * **What is a PendingIntent?**
 
 * **Can you manually call the Garbage collector?**
+
 * **What is the best way to update the screen periodically?**
 * **What are the different types of Broadcasts?**
 * **Have you developed widgets? Describe.**

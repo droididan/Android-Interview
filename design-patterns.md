@@ -6,9 +6,7 @@ Design Patterns are  these patterns are categorized into 3 main groups:
 * **Creational Patterns** - design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation
 * **Structural Patterns** - structural design patterns are design patterns that ease the design by identifying a simple way to realize relationships between entities.
 
-### 
-
-### 
+# 
 
 # Behavioral
 

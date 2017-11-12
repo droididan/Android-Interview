@@ -59,9 +59,9 @@ When you go to a restaurant and you order a nice steak, you don't necessarily kn
 ```kotlin
 object RxBus {
     private var bus : Subject<Any, Any> = SerializedSubject<>(PublishSubject.create())
-    
+
     fun getEvent : Observable<Any> = bus
-    
+
     fun post(obj: Any) { bus.onNext(obj)
 }
 ```
@@ -93,7 +93,7 @@ RxBus.filter(event -> event is MyEvent)
         .subscribe()
 ```
 
-**Result**
+\*_**important**_- _don't forget to manage the Observable lifecycle and to unsubscribe it when you finish working with it._
 
 # Creational Patterns
 

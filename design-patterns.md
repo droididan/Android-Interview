@@ -117,32 +117,31 @@ The adapter pattern converts the interface of a class into another interface the
 **Example**
 
 ```kotlin
-interface StringEditor {
-    var text: String
+interface Target {
+    fun request()
 }
 
-class NormalText(override var url: String) : StringEditor
+class Adaptee {
+    fun networkRequest() {
+        api.getUsers()
+    }
+}
 
-class TextChangerUpperCase(normalText: NormalText) : StringEditor {
+class AdapterClass : Target {
 
-    override var text: String
-        set(normalText) {
-            
-        }
-
-    private fun makeTextUppercase(text: String): String = text.toUpperCase()
-    private fun makeTextLowercase(text: String): String = text.toLowerCase()
-
+    var adaptee by lazy { Adaptee() }
+        
+    override fun request() {
+         adaptee.networkRequest()   // POST 
+    }
 }
 ```
 
 **How Usage**
 
 ```
-val normalText = NormalText("This is just a text...")
-val underCasedText = TextChanger(normalText)
-
-
+var target : Target = AdapterClass()
+target.networkRequest()
 ```
 
 **Result**

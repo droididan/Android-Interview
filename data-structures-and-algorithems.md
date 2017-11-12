@@ -19,7 +19,9 @@
 * **String Manipulation **
 * **Binary Tree **its a tree which each node has at most two children, which are referred to as the _left_ _child _ and the _right child. _
 * **Binary Search Tree **it's like a binary tree but they allow fast lookup. Binary search trees keep their keys in sorted order, support three main operations: insertion of element, deletion of elements, lookup.
-* **Sorting Algorithms **Quick Sort - 
+* ```
+  Sorting Algorithms
+  ```
 * **Hash Table or Hash Map **[`Hashtable`](http://java.sun.com/javase/7/docs/api/java/util/Hashtable.html)is [synchronized](https://stackoverflow.com/questions/1085709/what-does-synchronized-mean), whereas[`HashMap`](http://java.sun.com/javase/7/docs/api/java/util/HashMap.html)is not. This makes[`HashMap`](http://java.sun.com/javase/7/docs/api/java/util/HashMap.html)better for non-threaded applications, as unsynchronized Objects typically perform better than synchronized ones.  
   1. [`Hashtable`](http://java.sun.com/javase/7/docs/api/java/util/Hashtable.html)does not allow`null`keys or values.[`HashMap`](http://java.sun.com/javase/7/docs/api/java/util/HashMap.html)allows one`null`key and any number of`null`values.
 
@@ -31,5 +33,8 @@
 
 * **Greedy Algorithm**
 
+* `LinkedHasMap`
 
+* 
+ 
 

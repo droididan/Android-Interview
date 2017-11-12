@@ -2,10 +2,10 @@
 
 > The level of questions asked on Data Structures And Algorithms totally depends on the company for which you are applying.
 
-*  **ArrayList** -  Resizable-array implementation of List interface. 
-*  **LinkedList** can contain duplicate elements, maintains insertion order,
-*  **DoublyLinkedList** - each node contains tow fields called _links, \_that are references to the previous_ and to the \_next node, when deleting a node the previous one getting deleted
-*  **Stack **The Stack calss reperesent a last-in-first-out \(LIFO\) stack of objects. It extends the class Vector with five operation that allow vector to be treated as a stack.Modifier and Type
+* **ArrayList** -  Resizable-array implementation of List interface. 
+* **LinkedList** can contain duplicate elements, maintains insertion order,
+* **DoublyLinkedList** - each node contains tow fields called _links, \_that are references to the previous_ and to the \_next node, when deleting a node the previous one getting deleted
+* **Stack **The Stack calss reperesent a last-in-first-out \(LIFO\) stack of objects. It extends the class Vector with five operation that allow vector to be treated as a stack.Modifier and Type
   |  | Method and Description |
   | :--- | :--- |
   | `boolean` | [`empty`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#empty%28%29)`()`Tests if this stack is empty. |
@@ -14,7 +14,7 @@
   | [`E`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html) | [`push`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#push%28E%29)`(`[`E`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html)`item)`Pushes an item onto the top of this stack. |
   | `int` | [`search`](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html#search%28java.lang.Object%29)`(`[`Object`](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html)`o)`Returns the 1-based position where an object is on this stack. |
 * **Queue FIFO - **peek\(\) will retrieve the object but will not remove it, add\(\) will insert, poll\(\) will retrieve and remove the elemnt
-* **PriorityQueue - **he elements of the priority queue are ordered according to their natural ordering
+* **PriorityQueue -** elements of the priority queue are ordered according to their natural ordering
 * **Dynamic** **Programming **must of the time used for optimization. a dynamic programming algo will will examine the previously solved problam and will combine their solutions to give the best solution for the given problem
 * **String Manipulation **
 * **Binary Tree **its a tree which each node has at most two children, which are referred to as the _left_ _child _ and the _right child. _

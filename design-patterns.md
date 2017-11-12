@@ -96,8 +96,8 @@ errorDialog.show()
 **Result**
 
 ```
-showing ErrorDialog...
-showing NetworkDialog...
+show the ErrorDialog...
+show the NetworkDialog...
 ```
 
 ### Dependency Injection
@@ -112,5 +112,38 @@ showing NetworkDialog...
 
 ### Adapter
 
-The \_adapter pattern \_converts the interface of a class into another interface the clients expects. This pattern mainly adapts one object to another one. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
+The adapter pattern converts the interface of a class into another interface the clients expects. This pattern mainly adapts one object to another one. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
+
+**Example**
+
+```kotlin
+interface StringEditor {
+    var text: String
+}
+
+class NormalText(override var url: String) : StringEditor
+
+class TextChangerUpperCase(normalText: NormalText) : StringEditor {
+
+    override var text: String
+        set(normalText) {
+            
+        }
+
+    private fun makeTextUppercase(text: String): String = text.toUpperCase()
+    private fun makeTextLowercase(text: String): String = text.toLowerCase()
+
+}
+```
+
+**How Usage**
+
+```
+val normalText = NormalText("This is just a text...")
+val underCasedText = TextChanger(normalText)
+
+
+```
+
+**Result**
 

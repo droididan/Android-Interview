@@ -1,4 +1,4 @@
-Design Patterns
+# Design Patterns
 
 Design Patterns are  these patterns are categorized into 3 main groups:
 
@@ -15,4 +15,43 @@ Design Patterns are  these patterns are categorized into 3 main groups:
 ### Observer Pattern
 
 The observer pattern is used to allow an object to publish changes to its state. Other objects subscribe to be immediately notified of any changes. RxJava/Android is doing a great job by using the observer patterns to observe object or views. \(check this [acrticle](https://github.com/idanbar134/into_the_rx) for more information\)
+
+**Example**
+
+```kotlin
+interface TextChangedListener {
+    fun onTextChanged(newTest: String)
+}
+
+class PrintingTextChangedListener : TextChangedListener {
+    override fun onTextChanged(newText: String) = print("Text has changed: $newText")
+}
+
+class TextView {
+    
+    var listener: TextChangedListener? = null
+    
+    var text: String by Delegates.observable("") { prop, old, new -> 
+        listener?.onTextChanged(new)
+    }
+}
+```
+
+**Example**
+
+```
+val textView = TextView()
+textView.listener = PrintingTextChangedListener()
+textView.text = "Test1"
+textView.text = "Test2"
+```
+
+**Output**
+
+```
+Text is changed: Test1
+Text is changed: Test2
+```
+
+
 

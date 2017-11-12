@@ -12,6 +12,7 @@
 * [Tools And Technologies](tools-and-technologies.md)
 * [Android Test Driven Development](android-test-driven-development.md)
 * [Advanced Stuff](advanced-stuff.md)
+* [Design Patterns](/design-patterns.md)
 
 ### 
 

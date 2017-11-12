@@ -1,13 +1,13 @@
 ### Core Android
 
 * **Explain activity lifecycle.** OnCreate -&gt; OnStart -&gt; OnResume -&gt; onPause -&gt; OnStop -&gt; OnDestroy
-* **Tell all the Android appplication components. **Activities - dictate the UI, Services - Handle long running operations on the background , BroadCast Receivers - They handle communication between Android OS and applications, Content Providers -&gt; They handle data and database management issues.
-* **Service vs IntentService. **The _Service \_can be used in tasks with no UI, but shouldn't be too long. If you need to perform long tasks, you must use threads within Service. The \_IntentService_  
+* **Tell all the Android appplication components. **`Activities` - dictate the UI,` Services` - Handle long running operations on the background , `BroadCast Receivers` - They handle communication between Android OS and applications, `Content Providers` They handle data and database management issues.
+* **Service vs IntentService. **`The`_`Service`  can be used in tasks with no UI, but shouldn't be too long. If you need to perform long tasks, you must use threads within Service. The `IntentService`_  
   can be used in long tasks usually with no communication to Main Thread. If communication is required, can use Main Thread handler or broadcast intents. Another case of use is when callbacks are needed \(Intent triggered tasks\).
 
 * **What is the structure of an Android Application? **Manifest, assets, resources, java classs
 
-* **How to persist data in an Android app? **Shared Preferences, internal database like Realm, Room, SQLite, AndroidORM etc...
+* **How to persist data in an Android app? **Shared Preferences, internal database like Realm, Room, SQLite, AndroidORM and many more, less common - Writing to a file.
 
 * **How would you perform a long-running operation in an application? **With a background Service.
 
@@ -65,6 +65,7 @@
 * **Describe how broadcasts and intents work to be able to pass messages around your app?**
 
 * **How do you handle Bitmaps in Android as it takes too much memory?**
+
 * **What are different ways to store data in your Android app?**
 * **What is the Dalvik Virtual Machine?**
 * **What is the relationship between the life cycle of an AsyncTask and an Activity? What problems can this result in? How can these problems be avoided?**
@@ -97,6 +98,7 @@
 * **What is the ViewHolder pattern? Why should we use it?**
 
 * **What is a PendingIntent?**
+
 * **Can you manually call the Garbage collector?**
 * **What is the best way to update the screen periodically?**
 * **What are the different types of Broadcasts?**

@@ -19,20 +19,21 @@ The observer pattern is used to allow an object to publish changes to its state.
 **Example**
 
 ```kotlin
-interface TextChangedListener {
-    fun onTextChanged(newTest: String)
+interface TodoChangedListener {
+    fun onTodoChanged(todoString: String)
 }
 
-class PrintingTextChangedListener : TextChangedListener {
-    override fun onTextChanged(newText: String) = print("Text has changed: $newText")
+class TodoTextChangedListener : TextChangedListener {
+    override fun onTodoChanged(todoString: String) = repository.addNewTodo(todoString)
 }
 
-class TextView {
-    
-    var listener: TextChangedListener? = null
-    
+// the object to create
+class TodoView {
+
+    var listener: TodoChangedListener? = null
+
     var text: String by Delegates.observable("") { prop, old, new -> 
-        listener?.onTextChanged(new)
+        listener?.onTodoChanged(new)
     }
 }
 ```
@@ -41,16 +42,16 @@ class TextView {
 
 ```
 val textView = TextView()
-textView.listener = PrintingTextChangedListener()
-textView.text = "Test1"
-textView.text = "Test2"
+textView.listener = TodoTextChangedListener()
+textView.text = "Go to the market"
+textView.text = "Do homework"
 ```
 
 **Output**
 
 ```
-Text is changed: Test1
-Text is changed: Test2
+Text is changed: Go to the market
+Text is changed: Do homework
 ```
 
 

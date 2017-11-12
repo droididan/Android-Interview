@@ -1,6 +1,6 @@
 # Design Patterns
 
-instead of leaving tons of confusing comments in your code, a much better approach is to adopt common _design patterns. _Design patterns are reusable solutions to common software problems, the patterns will fall into the following categories:
+This article will cover some main Design Patterns that are relevant to the Android world, all the example are written in awesome `Kotlin` language. Instead of leaving tons of confusing comments in your code, a much better approach is to adopt common design patterns. Design patterns are reusable solutions to common software problems, the patterns will fall into the following categories:
 
 * **Behavioral Patterns** - born to identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibillity in carrying out this communication.
 * **Creational Patterns** - design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation
@@ -62,7 +62,7 @@ Instead of constructors, we can use abstraction of the object generation so that
 interface Dialog {
     val title: String
     fun show()
-    
+
     // can be extended with more interfaces like: action OK/Cancel
 }
 
@@ -81,7 +81,6 @@ class DialogFactory {
         }
     }
 }
-
 ```
 
 **How Usage**
@@ -101,8 +100,6 @@ showing ErrorDialog...
 showing NetworkDialog...
 ```
 
-
-
 ### Dependency Injection
 
 **Example**
@@ -115,13 +112,5 @@ showing NetworkDialog...
 
 ### Adapter
 
-The _adapter pattern _converts the interface of a class into another interface the clients expects. This pattern mainly adapts one object to another one. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
-
-
-
-
-
-
-
-
+The \_adapter pattern \_converts the interface of a class into another interface the clients expects. This pattern mainly adapts one object to another one. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
 

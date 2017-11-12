@@ -50,6 +50,24 @@ Text is changed: Go to the market
 Text is changed: Do homework
 ```
 
+
+
+### Command Pattern
+
+When you go to a restaurant and you order a nice steak, you don't necessarily know which cook will prepare you beloved meet. you just tell the waiter "Give me meet! now..!" and the scared waiter posts the order in the kitchen for the next available cook. Just like the `Command` Pattern  give you issue requests without knowing the receiver. you encapsulate a request as an object and send it off. who is listening in the other end is a complete different story. for example lets create a Bus with Rx: 
+
+
+
+**Example**
+
+```kotlin
+When you to a 
+```
+
+**How Usage**
+
+**Result**
+
 # Creational Patterns
 
 ### Factory Method Pattern
@@ -130,7 +148,7 @@ class Adaptee {
 class AdapterClass : Target {
 
     var adaptee by lazy { Adaptee() }
-        
+
     override fun request() {
          adaptee.networkRequest()   // POST 
     }
